@@ -1,0 +1,36 @@
+[package]
+name = "eigenlayer-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+eth-keystore = { git = "https://github.com/OpacityLabs/eth-keystore-rs", version = "0.5.0" }
+eth-bn254-keystore = { git = "https://github.com/OpacityLabs/eth-keystore-rs", branch = "bn254"  }
+hex = "0.4.3"
+web3 = "0.19.0"
+secp256k1 = "0.29.0"
+ethers = "2.0.14"
+ethers-signers = "2.0.14"
+structopt = "0.3.26"
+serde = "1.0.203"
+serde_yaml = "0.9.34"
+eyre = "0.6.12"
+tracing = "0.1.40"
+ark-ff = { version = "0.4.2"}
+ark-bn254 = { version = "0.4.0" }
+ark-std = { version = "0.4.0" }
+ark-ec = { version = "0.4.2"}
+sha2 = { version = "0.10.6"}
+num-bigint = "0.4.5"
+# eigensdk-client-avsregistry = "0.0.1-alpha"
+# eigensdk-client-elcontracts = "0.0.1-alpha"
+# eigensdk-chainio-utils = "0.0.1-alpha"
+
+[dev-dependencies]
+rand_core = {version = "0.6.4", features = ["getrandom"] }
+hex = { version = "0.4.3" }
+hex-literal = { version = "0.4.1" }
+json = { version = "0.12.4" }
+num-bigint = { version = "0.4.3" }
